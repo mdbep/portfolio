@@ -151,6 +151,22 @@ export const profile: Profile = {
   ],
   projects: [
     {
+      id: "super-scheduler",
+      url: "https://superscheduler.org",
+      npm: "https://www.npmjs.com/package/super-scheduler-lite",
+      stack: [
+        "TypeScript",
+        "React",
+        "Rollup",
+        "Playwright",
+        "React Router",
+        "Cloudflare Pages",
+        "Cloudflare Workers",
+        "Cloudflare D1",
+        "Cloudflare R2",
+      ],
+    },
+    {
       id: "apidex",
       url: "https://apidex.mdbep.dev",
       stack: [

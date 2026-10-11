@@ -200,9 +200,21 @@
       "stack": "Stack",
       "viewDetails": "View details",
       "visit": "Visit live",
-      "repo": "Source"
+      "repo": "Source",
+      "npm": "npm package"
     },
     "entries": {
+      "super-scheduler": {
+        "name": "SuperScheduler",
+        "role": "Personal project",
+        "summary": "Virtualized resource scheduler for React and the browser, with continuous zoom, drag and drop, and a DOM engine that scrolls without React renders. A public Lite edition is published on npm, while the Pro edition is distributed privately; the site and downloads run entirely on Cloudflare.",
+        "highlights": [
+          "DOM engine with two-dimensional virtualization: scrolling, zoom and gestures run without React renders.",
+          "Two editions from one repository: super-scheduler-lite on npm, and a private Pro build with continuous zoom, resource trees, links, minimap and history.",
+          "Pro installs through per-customer download keys served by a Cloudflare Worker over private R2 storage and D1, with revocation and rotation.",
+          "Documentation site in four languages with live demos and a playground, prerendered to static HTML on Cloudflare Pages."
+        ]
+      },
       "apidex": {
         "name": "apidex",
         "role": "Personal project",

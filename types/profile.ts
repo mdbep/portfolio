@@ -35,6 +35,7 @@ export type ProjectEntry = {
   id: string
   url?: string
   repo?: string
+  npm?: string
   year?: string
   stack?: ReadonlyArray<string>
 }

@@ -3,7 +3,11 @@
 import * as React from "react"
 import { useTranslations } from "next-intl"
 import { HugeiconsIcon } from "@hugeicons/react"
-import { ArrowUpRight01Icon, GithubIcon } from "@hugeicons/core-free-icons"
+import {
+  ArrowUpRight01Icon,
+  GithubIcon,
+  NpmIcon,
+} from "@hugeicons/core-free-icons"
 
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -130,7 +134,7 @@ function ProjectDialog({ project, open, onOpenChange }: ProjectDialogProps) {
           ) : null}
         </div>
 
-        {project.url || project.repo ? (
+        {project.url || project.repo || project.npm ? (
           <div className="flex flex-wrap gap-2 border-t border-dashed border-border p-5 sm:p-6">
             {project.url ? (
               <Button asChild size="sm">
@@ -159,6 +163,19 @@ function ProjectDialog({ project, open, onOpenChange }: ProjectDialogProps) {
                     data-icon="inline-start"
                   />
                   {t("detail.repo")}
+                </a>
+              </Button>
+            ) : null}
+            {project.npm ? (
+              <Button asChild size="sm" variant="outline">
+                <a href={project.npm} target="_blank" rel="noopener noreferrer">
+                  <HugeiconsIcon
+                    icon={NpmIcon}
+                    className="size-3.5"
+                    strokeWidth={1.75}
+                    data-icon="inline-start"
+                  />
+                  {t("detail.npm")}
                 </a>
               </Button>
             ) : null}
